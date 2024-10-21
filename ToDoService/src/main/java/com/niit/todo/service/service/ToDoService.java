@@ -20,4 +20,6 @@ public interface ToDoService {
 
     //get by title
     ToDo getByTitle(String title);
+
+    ToDo get();
 }
