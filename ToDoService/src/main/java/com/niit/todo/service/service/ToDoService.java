@@ -17,4 +17,7 @@ public interface ToDoService {
    List<ToDo> getAllTodos();
     //Delete Todo by ID
     boolean deleteTodoById(Long id) throws TodoNotFoundException;
+
+    //get by title
+    ToDo getByTitle(String title);
 }
