@@ -71,4 +71,12 @@ public class ToDoServiceImpl implements ToDoService{
         toDoRepository.deleteById(id);
         return true;
     }
+
+    @Override
+    public ToDo getByTitle(String title){
+        return toDoRepository.findByTitle(title);
+    }
+
+
+
 }
